@@ -1,23 +1,19 @@
-var num = 0;
-var resultEL = document.getElementById("result");
+
+
+for (var i = 0 ; i <= 100; i++) {
 
 
 
-for (var i=0 ; i < 100; i++){
-
-
-
-    if ( i % 3){
-       var resultEL= "Fizz";
-    } else if ( i % 5){
-       var resultEL= "Fizz";
-    } else if  ( i % 5 == i % 3){
-      var resultEL= "FizzBuzz";
-    } else {
-      var resultEL = i;
+    if  (i%15 == 0) {
+       resultEL = "FizzBuzz";
+    } else if (i%5 == 0) {
+        resultEL = "Buzz";
+    } else if (i%3 == 0)  {
+        resultEL = "Fizz";
+    } else if ((i%3 > 0) || (i%5 > 0)){
+        resultEL = i;
     }
 
+
+    document.getElementById("result").innerHTML += "<li>" + resultEL + "</li>";
 }
-
-
-document.getElementById("result").innerHTML += "<li>" + resultEL + "</li>"
