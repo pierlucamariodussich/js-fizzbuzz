@@ -1,12 +1,12 @@
 var FIZZ = 3;
 var BUZZ = 5;
 var FIZZBUZZ = FIZZ*BUZZ;
-var min_div = 1
-var max_div = 100
+var minCont = 1
+var maxCont = 100
 var resultEL;
 
 
-for (var i = min_div ; i <= max_div ; i++) {
+for (var i = minCont ; i <= maxCont ; i++) {
 
     resultEL = i;
 
