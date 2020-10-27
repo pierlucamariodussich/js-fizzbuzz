@@ -1,17 +1,21 @@
+var FIZZ = 3;
+var BUZZ = 5;
+var FIZZBUZZ = FIZZ*BUZZ;
+var min_div = 1
+var max_div = 100
+var resultEL;
 
 
-for (var i = 1 ; i <= 100; i++) {
+for (var i = min_div ; i <= max_div ; i++) {
 
+    resultEL = i;
 
-
-    if  (i%15 == 0) {
+    if  (i%FIZZBUZZ == 0) {
        resultEL = "FizzBuzz";
-    } else if (i%5 == 0) {
+    } else if (i%BUZZ == 0) {
         resultEL = "Buzz";
-    } else if (i%3 == 0)  {
+    } else if (i%FIZZ == 0)  {
         resultEL = "Fizz";
-    } else if ((i%3 > 0) || (i%5 > 0)){
-        resultEL = i;
     }
 
 
